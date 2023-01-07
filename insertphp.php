@@ -41,7 +41,7 @@
 		
 	if($flag == "true"){
         //insert query execution
-		$sql = "INSERT INTO records VALUES('','$name','$email','$age')";
+		$sql = "INSERT INTO records(name,email,age) VALUES('$name','$email','$age')";
         
         if(mysqli_query($conn, $sql)){	
 			echo "Successufully added";
